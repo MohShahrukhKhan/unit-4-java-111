@@ -4,19 +4,20 @@ public class Cricket {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-     int oneS=10;
-     int twoS=20;
-     int threeS=30;
-      int fourS=40;
-      int fiveS=50;
-      cricketScore(oneS,twoS,threeS,fourS,fiveS);
-	}
-
-	private static void cricketScore(int oneS, int twoS, int threeS, int fourS, int fiveS) {
-		// TODO Auto-generated method stub
-		int total=oneS+twoS+threeS+fourS+fiveS;
-		System.out.println(total);
-				
+   	// TODO Auto-generated method stub
+	   byte oneS=2;
+	   byte twoS=3;
+	   byte threeS=3;
+	   byte fourS=4;
+	   byte fiveS=6;
+		cricketScore(oneS,twoS,threeS,fourS,fiveS);
+	  }
+  
+	  private static void cricketScore(byte oneS, byte twoS, byte threeS, byte fourS, byte fiveS) {
+		  // TODO Auto-generated method stub
+		  int total=oneS*1+twoS*2+threeS*3+fourS*4+fiveS*5;
+		  System.out.println(total);
+						  
 	}
 
 }
