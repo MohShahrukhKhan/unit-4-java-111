@@ -10,7 +10,9 @@ public class ZImpl implements Z {
 		Z.funAA();
 		Z.funC();
 		Z.funZ();
-
+      
+		X.funBA();
+		Y.funB();
 		
 		
 		
