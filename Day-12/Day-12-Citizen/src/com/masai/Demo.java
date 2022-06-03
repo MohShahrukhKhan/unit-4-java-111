@@ -1,6 +1,7 @@
 package com.masai;
-import java.util.regex.Pattern;
+
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Demo {
 
