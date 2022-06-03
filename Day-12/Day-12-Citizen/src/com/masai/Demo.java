@@ -1,13 +1,13 @@
 package com.masai;
-
+import java.util.regex.Pattern;
 import java.util.Scanner;
 
 public class Demo {
 
 	public boolean validate(String name, String mobileNum, String aadharCard) {
 		
-		if(name.length()<9&&name.length()>2&&aadharCard.length()==12) {
-			if(mobileNum.length()==10&&mobileNum.charAt(0)=='9'||mobileNum.length()==10&&mobileNum.charAt(0)=='6'||mobileNum.length()==10&&mobileNum.charAt(0)=='7'||mobileNum.length()==10&&mobileNum.charAt(0)=='8') {
+		if(Pattern.matches("[a-zA-Z]{3,8}", name)&&Pattern.matches("\\d{12}", aadharCard)) {
+			if((Pattern.matches("[7869]{1}\\d{9}", mobileNum))){
 				
 				return true;
 			}
