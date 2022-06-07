@@ -1,0 +1,36 @@
+package com.masai;
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+	public static void main(String[] args){
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+System.out.println("Enter You Name");
+String name=sc.next();
+
+System.out.println("Enter You Country Name");
+String countryName=sc.next();
+try {
+	new UserRegistration(name, countryName);
+}catch(InvalidCountryException ice) {
+	System.out.println(ice.getMessage());
+}
+
+
+	}
+
+	public UserRegistration(String userName,String userCountry) throws InvalidCountryException {
+		super();
+		// TODO Auto-generated constructor stub
+		if(Pattern.matches("India", userCountry)) {
+			System.out.println("User registration done successfully");
+		}else {
+			InvalidCountryException ici=new InvalidCountryException("“User Outside India cannot be registered”");
+			throw ici;
+		}
+	}
+
+}
